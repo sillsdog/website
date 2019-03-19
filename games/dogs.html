@@ -3,31 +3,49 @@
 
 <head>
   <script>
-  const DOG_URL = 'https://dog.ceo/api/breeds/image/random';
+    function myFunction() {
+      var e = document.getElementById("ddlViewBy");
+      var strUser = e.options[e.selectedIndex].text;
+      var val = e.options[e.selectedIndex].value;
+      if (val == 1) {
+        var DOG_URL = 'https://dog.ceo/api/breeds/image/random';
+      } else {
+        DOG_URL = 'https://dog.ceo/api/breed/' + strUser + '/images/random';
+      };
+      const promise = fetch(DOG_URL);
+      promise
+        .then(function(response) {
+          const processingPromise = response.json();
+          return processingPromise;
+        })
+        .then(function(processedResponse) {
+          const img = document.createElement('img');
+          img.src = processedResponse.message;
+          img.height = '200';
+          const place = document.getElementById('doggys');
+          place.appendChild(img);
+        });
+    };
 
-  function myFunction() {
-    const promise = fetch(DOG_URL);
-    promise
-      .then(function(response) {
-        const processingPromise = response.json();
-        return processingPromise;
-      })
-      .then(function(processedResponse) {
-        const img = document.createElement('img');
-        img.src = processedResponse.message;
-        img.alt = 'Cute doggo';
-        img.height = '200';
-        const place = document.getElementById('doggys');
-        place.appendChild(img);
-      });
-  }
+    function deldogs() {
+      document.getElementById('doggys').innerHTML = '';
+    };
   </script>
 </head>
 
-<body>
-
-  <input onclick = 'myFunction()' style = 'margin:8px' type='submit' id='dogs' value='dog' />
-
+<body style='background-image: url("../images/background.png")'>
+  <a href='../main.html'>home</a>
+  <br>
+  <input onclick='myFunction()' style='margin:8px' type='submit' id='dogs' value='dog' />
+  <select id="ddlViewBy">
+    <option value="1">random</option>
+    <option value="2">samoyed</option>
+    <option value="3">shiba</option>
+    <option value="4">husky</option>
+    <option value="5">chow</option>
+    <option value="6">germanshepherd</option>
+  </select>
+  <input onclick='deldogs()' style='margin:8px' type='submit' id='cleardoggys' value='x' />
   <div id='doggys'></div>
 
 </body>
