@@ -3,13 +3,10 @@
   <head>
     <script type='text/javascript>
       var a = 0;
-      while (true) {
-        setTimeout(function(){
-          document.getElementFromId('body').innerHtml = a
-          a 
-        }, 1000); 
-      }
-    <script>
+      while (a<15) {
+		document.getElementFromId('body').innerHtml = a;
+      };
+    </script>
   </head>
   <body>
     <p id='body'>
