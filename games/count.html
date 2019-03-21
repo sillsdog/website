@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<p>time to count !</p>
-<p id='demo'></p>
-	
-<script>
-var myVar = setInterval(countijg ,1000);
-var a = 0;
-function countijg() {
-  document.getElementById("demo").innerHTML = a;
-	a = a + 1;
-}
-</script>
+    <p>time to count !</p>
+    <p id='demo'></p>
+    <input type='number' id='delay' value='100' onupdate='delay'/>
+    <script>
+        var delay = 100;
+        var myVar = setInterval(countijg, delay);
+        var a = 0;
+
+        function countijg() {
+            document.getElementById("demo").innerHTML = a;
+            a = a + 1;
+        };
+		
+		function delay() {
+			delay = document.getElementFromId('delay').value;	
+		};
+    </script>
 
 </body>
+
 </html>
