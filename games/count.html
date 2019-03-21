@@ -1,17 +1,18 @@
 <!DOCTYPE html>
- <html>
-  <head>
-    <script type='text/javascript>
-      var a = 0;
-      while (a<15) {
-		document.getElementFromId('body').innerHtml = a;
-      };
-    </script>
-  </head>
-  <body>
-    <p id='body'>
-      religion
-    </p>
-	<h1>yeet</h1>
-  </body>
+<html>
+<body>
+
+<p>time to count !</p>
+<p id='demo'></p>
+	
+<script>
+var myVar = setInterval(countijg ,1000);
+var a = 0;
+function countijg() {
+  document.getElementById("demo").innerHTML = a;
+	a = a + 1;
+}
+</script>
+
+</body>
 </html>
