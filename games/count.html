@@ -5,7 +5,7 @@
 
     <p>time to count !</p>
     <p id='demo'></p>
-    <input type='number' id='delay' value='100' onupdate='delay'/>
+    <input type='number' id='ghjhg' value='100' onupdate='delay' />
     <script>
         var delay = 100;
         var myVar = setInterval(countijg, delay);
@@ -14,11 +14,9 @@
         function countijg() {
             document.getElementById("demo").innerHTML = a;
             a = a + 1;
+						delay = document.getElemenFromId('ghjhg').value;
+            myVar = setInterval(countijg, delay);
         };
-		
-		function delay() {
-			delay = document.getElementFromId('delay').value;	
-		};
     </script>
 
 </body>
