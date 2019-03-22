@@ -8,13 +8,13 @@
     <input type='number' id='ghjhg' value='100' onupdate='delay' />
     <script>
         var delay = 1000;
-        var myVar = setInterval(countijg, delay);
         var a = 0;
-
         function countijg() {
             document.getElementById("demo").innerHTML = a;
             a = a + 1;
+            setTimeout(countijg, delay);
         };
+        setTimeout(countijg, delay);
     </script>
 
 </body>
