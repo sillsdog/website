@@ -7,7 +7,7 @@
     <p id='demo'></p>
     <input type='number' id='ghjhg' value='100' onupdate='delay' />
     <script>
-        var delay = 100;
+        var delay = 1000;
         var myVar = setInterval(countijg, delay);
         var a = 0;
 
@@ -15,7 +15,7 @@
             document.getElementById("demo").innerHTML = a;
             a = a + 1;
             delay = document.getElementById('ghjhg').value;
-	    setInterval(countijg, delay);
+	    var myVar = setInterval(countijg, delay);
         };
     </script>
 
