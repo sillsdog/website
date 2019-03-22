@@ -2,20 +2,20 @@
 <html>
 
 <body>
-
     <p>time to count !</p>
     <p id='demo'></p>
-    <input type='number' id='ghjhg' value='100' onupdate='delay' />
+    <input type='number' id='ghjhg' min='1' max='3000' value='1040'>
     <script>
-        var delay = 1000;
-        var a = 0;
+        var a = 1;
+        var delay = 100;
+
         function countijg() {
             document.getElementById("demo").innerHTML = a;
             a = a + 1;
-            delay = document.getElementbyId('ghjhg').value;
+            var delay = parseInt(document.getElementById("ghjhg").value);
             setTimeout(countijg, delay);
         };
-        setTimeout(countijg, delay);
+        setTimeout(countijg, 100);
     </script>
 
 </body>
