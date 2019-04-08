@@ -23,7 +23,7 @@
           img.src = processedResponse.message;
           img.height = '200';
           const place = document.getElementById('doggys');
-          place.appendChild(img);
+          place.insertBefore(img, place.firstChild);
         });
     };
 
