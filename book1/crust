@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="shortcut icon" type="image/png" href="../images/pie.png" />
+	<title>Pie Recipes 🥧</title>
+</head>
+
+<body>
+	<div class='holder'>
+		<div class='title'>
+			<img class='pie' src='../images/pie.png'></img>
+			<h1>Pie Recipes and More 🥧 🥧 🥧</h1>
+		</div>
+		<div>
+			<h2>Homemade Pie Crust</h2>
+			<div align='center'>
+				<a class='link' href='../index.html'>Return home</a>
+			</div>
+			<h2><u>Ingredients</u></h2>
+			<ul>
+				<li>2 1/2 cups all purpose flour
+				<li>1/4 teaspoons salt
+				<li>3 tablespoons sugar
+				<li>12 tablespoons cold butter, cut into cubes
+				<li>4 tablespoons vegetable shortening, cut into cubes
+				<li>1/4 cup to 1/2 cup ice cold water
+			</ul>
+			<div class='title'>
+				<h2><u>COOKING!!!</u></h2>
+				<ol>
+					<li>Combine the flour, salt, sugar, butter and shortening in the bowl of your food processor and pulse several times until the mixture resembles coarse sand. Alternatively, you can use a pastry cutter to combine the ingredients
+						in a large bowl.
+					<li>Add 1/4 cup of cold water to the food processor or bowl and mix until the mixture starts to form a dough. Add more water if needed. I find that 1/4 cup plus 2 tbsp is the perfect amount for me.
+					<li>Turn the dough out onto a lightly floured surface and quickly shape into a large ball. Divide the ball in two, and shape each dough ball into a small flat disc, about the size of your palm. Work quickly with the dough, as
+						warm hands will melt the butter and not give as flakey of a crust as desired.
+					<li>Wrap the discs with plastic wrap and refrigerate for at least 30 minutes and then use. If using the dough at a later time, let it sit on the counter for at least 10-15 minutes before rolling out on a lightly floured surface.
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
