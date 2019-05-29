@@ -1,0 +1,91 @@
+h1 {
+	font-family: 'Comic Sans MS';
+	font-size: 32px;
+}
+
+h2{
+	font-family: 'Comic Sans MS';
+	font-size: 30px;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Comic Sans MS';
+	font-size: 30px;
+}
+
+h4 {
+	font-family: 'Comic Sans MS';
+	font-size: 30px;
+}
+
+.pie {
+	width: 80px;
+	float: left;
+	margin: 5px;
+}
+
+.title {
+	border-style: dotted;
+	border-color: #C17C17;
+	background-color: #FBDF99;
+	padding: 0px 10px 0px 10px;
+}
+
+p {
+	font-size: 20px;
+	text-indent: 25px;
+}
+
+.holder {
+	margin: 0 20% 0 20%;
+}
+
+.martha {
+	width: 320px;
+	display: block;
+	margin: 10px auto;
+}
+
+.marthap {
+	width: 640px;
+	display: block;
+	margin: 10px auto;
+}
+
+.aboutme {
+	font-size: 15px;
+}
+
+.link {
+	font-family: 'Comic Sans MS';
+	font-size: 30px;
+	margin: 5px;
+}
+
+.book{
+    display: block;
+	margin: 25px auto;
+}
+
+.book .text{
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 40%; /* Adjust this value to move the positioned div up and down */
+	font-family: Arial,sans-serif;
+	color: #fff;
+	width: 60%; /* Set the width of the positioned div */
+}
+
+ol {
+	font-size: 20px;
+	line-height: 35px;
+}
+
+ul {
+	font-size: 20px;
+}
