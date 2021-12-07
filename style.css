@@ -1,21 +1,21 @@
 h1 {
-	font-family: 'Comic Sans MS';
+	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 32px;
 }
 
 h2{
-	font-family: 'Comic Sans MS';
+	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 30px;
 	text-align: center;
 }
 
 h3 {
-	font-family: 'Comic Sans MS';
+	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 30px;
 }
 
 h4 {
-	font-family: 'Comic Sans MS';
+	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 30px;
 }
 
@@ -29,7 +29,7 @@ h4 {
 	border-style: dotted;
 	border-color: #C17C17;
 	background-color: #FBDF99;
-	padding: 0px 10px 0px 10px;
+	padding: 0 10px 0 10px;
 }
 
 p {
@@ -58,7 +58,7 @@ p {
 }
 
 .link {
-	font-family: 'Comic Sans MS';
+	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 30px;
 	margin: 5px;
 }
@@ -76,7 +76,7 @@ p {
 	right: 0;
 	text-align: center;
 	top: 40%; /* Adjust this value to move the positioned div up and down */
-	font-family: Arial,sans-serif;
+	font-family: Arial, sans-serif;
 	color: #fff;
 	width: 60%; /* Set the width of the positioned div */
 }
