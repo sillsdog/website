@@ -3,7 +3,7 @@ h1 {
 	font-size: 32px;
 }
 
-h2{
+h2 {
 	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 30px;
 	text-align: center;
@@ -19,8 +19,13 @@ h4 {
 	font-size: 30px;
 }
 
+* {
+	font-family: serif;
+}
+
 .pie {
 	width: 80px;
+	height: 80px;
 	float: left;
 	margin: 5px;
 }
@@ -38,17 +43,20 @@ p {
 }
 
 .holder {
-	margin: 0 20% 0 20%;
+	margin: auto;
+	max-width: max(60%, 600px);
+	width: 100%;
 }
 
 .martha {
 	width: 320px;
+	max-width: 100%;
+	height: auto;
 	display: block;
 	margin: 10px auto;
 }
 
 .marthap {
-	width: 640px;
 	display: block;
 	margin: 10px auto;
 }
@@ -63,9 +71,20 @@ p {
 	margin: 5px;
 }
 
-.book{
-    display: block;
+.book {
+	background: url("images/book.png");
+	background-size: contain;
+    display: flex;
 	margin: 25px auto;
+	max-width: 329px;
+	aspect-ratio: 0.88918918918;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.book > * {
+	padding: 0;
 }
 
 .book .text{
